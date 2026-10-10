@@ -426,3 +426,12 @@ a:focus-visible, .btn:focus-visible {
   .banner img { aspect-ratio: 5 / 2; }
 }
 .banner + .section { padding-top: clamp(3rem, 6vw, 5rem); }
+
+/* Over Their Lives dimension colours */
+
+.card.body { background: #e07a5f; }
+.card.body .eyebrow, .card.body p { color: var(--ink); }
+.card.soul { background: #7b2869; }
+.card.spirit { background: #3d5a80; }
+.card.soul, .card.spirit { color: var(--paper); }
+.card.soul .eyebrow, .card.soul p, .card.spirit .eyebrow, .card.spirit p { color: #f1ebe6; }
