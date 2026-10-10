@@ -401,3 +401,19 @@ a:focus-visible, .btn:focus-visible {
 @media (min-width: 40rem) {
   .hero-figure img { aspect-ratio: 21 / 9; }
 }
+
+/* Logo plates and channel cards */
+
+.plate.light { background: var(--linen); border-color: var(--linen); align-items: stretch; }
+.plate.light .eyebrow { color: var(--ink-3); }
+.plate img { display: block; width: 62%; height: auto; margin: 0 auto; }
+.logo-panel { display: flex; align-items: center; justify-content: center; margin: 0 0 2.5rem; padding: clamp(2.5rem, 6vw, 4.5rem) 1.5rem; border-radius: 8px; background: var(--linen); }
+.logo-panel img { display: block; width: clamp(9rem, 22vw, 14rem); height: auto; }
+
+.card h3 { margin-top: clamp(2.5rem, 5vw, 4.5rem); margin-bottom: 0.75rem; font-size: clamp(1.75rem, 2.5vw, 2.125rem); line-height: 1.08; }
+.card.channel p { margin-bottom: 1.75rem; }
+.card .links { margin: auto 0 0; padding: 0; list-style: none; display: grid; gap: 0.6rem; justify-items: start; }
+@media (min-width: 40rem) and (max-width: 59.99rem) {
+  .cards:has(.channel) { grid-template-columns: 1fr; }
+}
+.plate img { align-self: center; flex: none; }
