@@ -435,3 +435,15 @@ a:focus-visible, .btn:focus-visible {
 .card.spirit { background: #3d5a80; }
 .card.soul, .card.spirit { color: var(--paper); }
 .card.soul .eyebrow, .card.soul p, .card.spirit .eyebrow, .card.spirit p { color: #f1ebe6; }
+
+/* Channel cards with artwork */
+
+.card.channel { padding: 0; overflow: hidden; }
+.card-img { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; background: var(--linen); }
+.card-body { display: flex; flex-direction: column; flex: 1; padding: 1.5rem 1.75rem 1.75rem; }
+.card-body .eyebrow { margin-bottom: 0.6rem; }
+.card.channel h3 { margin-top: 0; }
+@media (min-width: 40rem) and (max-width: 59.99rem) {
+  .card.channel { flex-direction: row; }
+  .card.channel .card-img { width: 40%; align-self: stretch; }
+}
