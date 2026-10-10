@@ -384,3 +384,20 @@ a:focus-visible, .btn:focus-visible {
 .hero + .section { padding-top: clamp(1.5rem, 4vw, 3.5rem); }
 .card { justify-content: flex-start; min-height: 0; }
 .card h4 { margin-top: clamp(2.5rem, 5vw, 4.5rem); }
+
+/* Hero image */
+
+.hero-figure { margin: 0 auto clamp(2rem, 4vw, 3.5rem); }
+.hero-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: 60% 50%;
+  border-radius: 2px;
+  background: var(--wash-sand);
+}
+@media (min-width: 40rem) {
+  .hero-figure img { aspect-ratio: 21 / 9; }
+}
