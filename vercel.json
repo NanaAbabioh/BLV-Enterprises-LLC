@@ -3,8 +3,24 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.blventerprisesllc.com"
+        }
+      ],
+      "destination": "https://blventerprisesllc.com/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.blventerprisesllc.com" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.blventerprisesllc.com"
+        }
+      ],
       "destination": "https://blventerprisesllc.com/:path*",
       "permanent": true
     }
