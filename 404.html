@@ -9,15 +9,18 @@
   <meta property="og:site_name" content="BLV Enterprises LLC">
   <meta property="og:title" content="Page not found — BLV Enterprises LLC">
   <meta property="og:description" content="The page you asked for does not exist on the BLV Enterprises LLC website.">
+  <meta name="theme-color" content="#fbfaf6">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
-    <div class="wrap header-inner">
+    <div class="wrap bar">
       <a class="wordmark" href="/">BLV Enterprises LLC</a>
-      <nav aria-label="Main">
+      <nav class="site-nav" aria-label="Main">
         <ul>
           <li><a href="/products">Products</a></li>
           <li><a href="/media">Media</a></li>
@@ -27,21 +30,46 @@
       </nav>
     </div>
   </header>
-  <main id="main" class="wrap">
-    <section class="intro">
-      <h1>Page not found</h1>
-      <p class="lede">That page does not exist on the BLV Enterprises LLC website.</p>
-      <p><a href="/">Return to the home page</a></p>
+  <main id="main">
+    <section class="hero hero-split wrap">
+      <h1 class="page-title">Page not found</h1>
+      <div class="hero-body">
+        <p class="lede">That page does not exist on the BLV Enterprises LLC website.</p>
+        <div class="actions"><a class="btn" href="/">Return to the home page <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.25" aria-hidden="true"><path d="M1 6h10M7 2l4 4-4 4"/></svg></a></div>
+      </div>
     </section>
   </main>
   <footer class="site-footer">
     <div class="wrap">
-      <p>
-        <strong>BLV Enterprises LLC</strong><br>
-        971 US Highway 202N, STE N, Branchburg, NJ 08876<br>
-        <a href="mailto:developer@blventerprisesllc.com">developer@blventerprisesllc.com</a>
-      </p>
-      <p>&copy; 2026 BLV Enterprises LLC</p>
+      <div class="footer-grid">
+        <p class="footer-mark">BLV Enterprises LLC</p>
+        <div>
+          <p class="eyebrow">Registered address</p>
+          <p>
+            <strong>BLV Enterprises LLC</strong><br>
+            971 US Highway 202N, STE N<br>
+            Branchburg, NJ 08876<br>
+            United States
+          </p>
+        </div>
+        <div>
+          <p class="eyebrow">Contact</p>
+          <p><a href="mailto:developer@blventerprisesllc.com">developer@blventerprisesllc.com</a></p>
+        </div>
+        <div>
+          <p class="eyebrow">Site</p>
+          <ul>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/media">Media</a></li>
+            <li><a href="/company">Company</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <p>&copy; 2026 BLV Enterprises LLC</p>
+        <p>A New Jersey limited liability company</p>
+      </div>
     </div>
   </footer>
 </body>
